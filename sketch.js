@@ -27,6 +27,7 @@ function setup() {
   visitedcolor = color(255, 255, 255);
   strokeWeight(1);
   initSensors();
+  background(100);
   grid.draw();
 }
 
@@ -41,7 +42,7 @@ function draw() {
   //console.log("running");
   stroke(0);
   //if (carsInitialised == false)
-  //grid.draw();
+  grid.draw();
   if (aliveCars == 0) {
     ("all cars inactive");
     nextGenerationCars();

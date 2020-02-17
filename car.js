@@ -96,8 +96,8 @@ class car {
     //this.updateForce(output[0]);
     /* Update Force */
     this.force = output[0];
-    if (this.force > 4) this.force = 4;
-    else if (this.force < -4) this.force = -4;
+    //if (this.force > 4) this.force = 4;
+    //else if (this.force < -4) this.force = -4;
     /* ---- */
     this.updatePosition();
   }

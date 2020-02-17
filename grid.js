@@ -30,7 +30,7 @@ class Grid {
   draw() {
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < cols; j++) {
-        this.grid[i][j].draw();
+        if (this.grid[i][j].path) this.grid[i][j].draw();
         //console.log("drawing");
       }
     }
